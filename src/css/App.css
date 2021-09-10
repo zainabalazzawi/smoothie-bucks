@@ -1,1 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;200;300;400;500&display=swap");
+:root {
+  --primary: #512d6d;
+  --accent: #00c1d4;
+}
+
+.main-container {
+  display: grid;
+  background: #f7f7f7;
+  min-height: 100vh;
+  padding: 20px;
+}
+.logo {
+  display: grid;
+}
+.text {
+  display: grid;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36.12px;
+  line-height: 41px;
+  justify-content: center;
+  color: var(--primary);
+}

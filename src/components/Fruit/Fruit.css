@@ -1,0 +1,49 @@
+.fruit {
+  display: grid;
+  padding: 20px;
+  position: relative;
+}
+
+.image-container {
+  display: grid;
+  box-shadow: 0px 10px 10px -4px rgba(0, 0, 0, 0.35);
+  border-radius: 18px;
+}
+
+.with-background-image {
+  background-position: center;
+  background-size: cover;
+  height: 190px;
+}
+
+.rectangle-fruit {
+  display: grid;
+  position: absolute;
+  grid-template-columns: 1fr 5fr;
+  background: var(--primary);
+  opacity: 0.75;
+  box-shadow: 0px 10px 10px -4px rgba(0, 0, 0, 0.35);
+  border-radius: 18px;
+  width: 155px;
+  height: 40px;
+  top: 80%;
+  right: 15%;
+  padding: 10px;
+}
+.fruit-name {
+  display: grid;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+.color {
+  display: grid;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #ffffff;
+  border-radius: 18px;
+}

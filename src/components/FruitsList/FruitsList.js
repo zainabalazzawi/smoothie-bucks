@@ -2,13 +2,17 @@ import React from "react";
 import Fruit from "../Fruit/Fruit";
 import "./FruitsList.css";
 
-const FruitsList = () => {
+const FruitsList = ({ data, setIsSelected, selected }) => {
   return (
     <div className="fruits-list">
-      <p className="text">
-        To make the best Smoothie, select your favorate fruites:
-      </p>
-      <Fruit />
+      {data.map((fruit) => (
+        <Fruit
+          fruit={fruit}
+          key={fruit.id}
+          setIsSelected={setIsSelected}
+          selected={selected}
+        />
+      ))}
     </div>
   );
 };
