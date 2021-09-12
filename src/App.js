@@ -11,8 +11,17 @@ function App() {
     "https://my-demos-data-default-rtdb.europe-west1.firebasedatabase.app/fruits.json"
   );
 
-  const { getIt, setGetIt, setIsSelected, selected, addFruit, selectedList } =
-    useGet();
+  const {
+    getIt,
+    setGetIt,
+    setIsSelected,
+    selected,
+    addFruit,
+    selectedList,
+    removeFromList,
+    setYourName,
+    yourName,
+  } = useGet();
   return (
     <div className="main-container">
       {!getIt ? (
@@ -30,7 +39,12 @@ function App() {
           <GetItButton getIt={getIt} setGetIt={setGetIt} />
         </div>
       ) : (
-        <GetIt selectedList={selectedList} />
+        <GetIt
+          selectedList={selectedList}
+          removeFromList={removeFromList}
+          setYourName={setYourName}
+          yourName={yourName}
+        />
       )}
     </div>
   );

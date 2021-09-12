@@ -1,7 +1,7 @@
 import React from "react";
 import "./SelectedFruitsList.css";
 
-const SelectedFruitsList = ({ selectedList }) => {
+const SelectedFruitsList = ({ selectedList, removeFromList }) => {
   console.log(selectedList);
 
   return (
@@ -18,6 +18,7 @@ const SelectedFruitsList = ({ selectedList }) => {
           <div
             className="fruit-name-selected-list"
             style={{ background: `${fruit.color}` }}
+            onClick={() => removeFromList(fruit)}
           >
             {fruit.name}
             {/* delete icon */}

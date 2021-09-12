@@ -5,7 +5,7 @@ const GetItButton = ({ setGetIt }) => {
   return (
     <div className="get-it-button" onClick={() => setGetIt(true)}>
       <div className="total-selected">
-        <p className="total">5</p>
+        <p className="total">0</p>
         <p className="selected">selected</p>
       </div>
       <h1 className="get-blend">
