@@ -10,8 +10,9 @@ function App() {
   const { data } = useFetch(
     "https://my-demos-data-default-rtdb.europe-west1.firebasedatabase.app/fruits.json"
   );
-  console.log(data);
-  const { getIt, setGetIt, setIsSelected, selected } = useGet();
+
+  const { getIt, setGetIt, setIsSelected, selected, addFruit, selectedList } =
+    useGet();
   return (
     <div className="main-container">
       {!getIt ? (
@@ -24,11 +25,12 @@ function App() {
             data={data}
             setIsSelected={setIsSelected}
             selected={selected}
+            addFruit={addFruit}
           />
           <GetItButton getIt={getIt} setGetIt={setGetIt} />
         </div>
       ) : (
-        <GetIt />
+        <GetIt selectedList={selectedList} />
       )}
     </div>
   );

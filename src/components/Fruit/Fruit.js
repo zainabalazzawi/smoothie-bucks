@@ -1,15 +1,16 @@
 import React from "react";
 import "./Fruit.css";
-const Fruit = ({ fruit, setIsSelected, selected }) => {
+const Fruit = ({ fruit, setIsSelected, selected, addFruit }) => {
   return (
     <div>
       <div
         className="fruit"
-        onClick={() => setIsSelected(true)}
+        onClick={() => addFruit(fruit)}
         // need to know how to select one when click
       >
         <div key={fruit.id}>
           <div
+            onClick={() => setIsSelected(true)}
             className="image-container with-background-image"
             title={fruit.title}
             style={{

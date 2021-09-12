@@ -2,7 +2,7 @@ import React from "react";
 import Fruit from "../Fruit/Fruit";
 import "./FruitsList.css";
 
-const FruitsList = ({ data, setIsSelected, selected }) => {
+const FruitsList = ({ data, setIsSelected, selected, addFruit }) => {
   return (
     <div className="fruits-list">
       {data.map((fruit) => (
@@ -11,6 +11,7 @@ const FruitsList = ({ data, setIsSelected, selected }) => {
           key={fruit.id}
           setIsSelected={setIsSelected}
           selected={selected}
+          addFruit={addFruit}
         />
       ))}
     </div>

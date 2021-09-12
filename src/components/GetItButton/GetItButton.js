@@ -9,8 +9,10 @@ const GetItButton = ({ setGetIt }) => {
         <p className="selected">selected</p>
       </div>
       <h1 className="get-blend">
-        let’s get blendy!
-        <FaArrowRight />
+        let’s get blendy!{" "}
+        <span>
+          <FaArrowRight />
+        </span>
       </h1>
     </div>
   );

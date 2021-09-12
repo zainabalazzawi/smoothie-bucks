@@ -2,12 +2,14 @@
 :root {
   --primary: #512d6d;
   --accent: #00c1d4;
+  --white: #ffffff;
+  --background: #f7f7f7;
 }
 
 .main-container {
   display: grid;
-  background: #f7f7f7;
-  min-height: 100vh;
+  background: var(--background);
+  height: 100vh;
   padding: 20px;
 }
 .logo {
