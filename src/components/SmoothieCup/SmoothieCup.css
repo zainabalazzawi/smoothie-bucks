@@ -1,5 +1,8 @@
 .smoothie-cup-container {
   display: grid;
+  position: absolute;
+  top: 20%;
+  right: 20%;
   padding: 20px;
 }
 
@@ -12,35 +15,35 @@
   align-items: center;
   text-align: center;
   /* color: var(--primary); */
-  background: #512d6d;
-  /* opacity: 0.3; */
+  background: var(--primary);
+  opacity: 0.3;
   border-radius: 90px 90px 30px 30px;
   padding: 10px;
   width: 300px;
+  height: 60px;
 }
 .smoothie-cup {
   display: grid;
-  background: #512d6d;
+  background: var(--primary);
   opacity: 0.3;
   height: 300px;
   width: 250px;
   place-content: center;
   border-radius: 18px;
+  justify-self: center;
 }
 
 .smoothie-cup-images {
   display: grid;
-  background: #f7f7f7;
+  background: var(--background);
   width: 180px;
   height: 250px;
-  place-self: center;
 }
 
 .image-container-smoothie-cup {
   display: grid;
-  justify-self: center;
   align-items: center;
-  width: 180px;
+  width: 170px;
   height: 50px;
 }
 .with-background-image-smoothie-cup {

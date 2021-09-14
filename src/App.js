@@ -14,14 +14,15 @@ function App() {
   const {
     getIt,
     setGetIt,
-    setIsSelected,
-    selected,
     addFruit,
     selectedList,
     removeFromList,
     setYourName,
     yourName,
+    makeIt,
+    setMakeIt,
   } = useGet();
+
   return (
     <div className="main-container">
       {!getIt ? (
@@ -32,11 +33,14 @@ function App() {
           </p>
           <FruitsList
             data={data}
-            setIsSelected={setIsSelected}
-            selected={selected}
             addFruit={addFruit}
+            selectedList={selectedList}
           />
-          <GetItButton getIt={getIt} setGetIt={setGetIt} />
+          <GetItButton
+            getIt={getIt}
+            setGetIt={setGetIt}
+            selectedList={selectedList}
+          />
         </div>
       ) : (
         <GetIt
@@ -44,6 +48,9 @@ function App() {
           removeFromList={removeFromList}
           setYourName={setYourName}
           yourName={yourName}
+          makeIt={makeIt}
+          setMakeIt={setMakeIt}
+          setGetIt={setGetIt}
         />
       )}
     </div>

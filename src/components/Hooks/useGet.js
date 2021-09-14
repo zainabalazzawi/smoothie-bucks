@@ -2,19 +2,14 @@ import { useEffect, useState } from "react";
 
 const useGet = () => {
   const [getIt, setGetIt] = useState(false);
-  const [selected, setIsSelected] = useState(false);
   const [selectedList, setSelectedList] = useState([]);
   const [yourName, setYourName] = useState("");
-  // const [selectedTotal, setSelectedTotal] = useState(0);
+  const [makeIt, setMakeIt] = useState(false);
 
   useEffect(() => {
     setGetIt(false);
-    setIsSelected(false);
     setYourName("");
-  }, []);
-
-  useEffect(() => {
-    setYourName("");
+    setMakeIt(false);
   }, []);
 
   const addFruit = (fruit) => {
@@ -29,25 +24,16 @@ const useGet = () => {
     );
   };
 
-  //Total of selected fruit
-  // useEffect(() => {
-  //   setSelectedTotal(selectedList.reduce((sum, {}) => sum + {}, 0));
-  // }, [selectedList]);
-
-  // function to select one
-  // const SelectOne = () => {};
-
   return {
     getIt,
     setGetIt,
-    selected,
-    setIsSelected,
     addFruit,
     selectedList,
     removeFromList,
-    // selectedTotal,
-    yourName,
     setYourName,
+    yourName,
+    setMakeIt,
+    makeIt,
   };
 };
 
