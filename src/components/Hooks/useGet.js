@@ -5,16 +5,23 @@ const useGet = () => {
   const [selectedList, setSelectedList] = useState([]);
   const [yourName, setYourName] = useState("");
   const [makeIt, setMakeIt] = useState(false);
-
   useEffect(() => {
     setGetIt(false);
-    setYourName("");
     setMakeIt(false);
   }, []);
 
-  const addFruit = (fruit) => {
+  const addRemoveFruit = (fruit) => {
     console.log(fruit);
-    if (selectedList.find((fruitItem) => fruitItem.id === fruit.id)) return;
+    // If fruit is in selectedList,
+    const fruitIsSelected = selectedList.find(
+      (fruitItem) => fruitItem.id === fruit.id
+    );
+    // then remove it from selectedList
+    if (fruitIsSelected) {
+      removeFromList(fruit);
+      return;
+    }
+    // If fruit is not in selectedList, then add it to selectedList
     setSelectedList([...selectedList, fruit]);
   };
 
@@ -24,16 +31,23 @@ const useGet = () => {
     );
   };
 
+  const isSelected = (fruit) => {
+    return (
+      selectedList.filter((selectedFruit) => selectedFruit.id === fruit.id)
+        .length > 0
+    );
+  };
   return {
     getIt,
     setGetIt,
-    addFruit,
+    addRemoveFruit,
     selectedList,
     removeFromList,
     setYourName,
     yourName,
     setMakeIt,
     makeIt,
+    isSelected,
   };
 };
 

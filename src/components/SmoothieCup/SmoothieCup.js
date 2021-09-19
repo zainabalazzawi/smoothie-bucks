@@ -5,17 +5,16 @@ const SmoothieCup = ({ yourName, selectedList }) => {
     <div className="smoothie-cup-container">
       <div className="smoothie-cup-name"> {yourName}</div>
       <div className="smoothie-cup">
-        <div className="smoothie-cup-images">
+        <div className="smoothie-cup-images-container">
           {selectedList.map((fruit) => (
-            <div className="fruit-item" key={fruit.id}>
-              <div
-                className="image-container-smoothie-cup  with-background-image-smoothie-cup"
-                title={fruit.title}
-                style={{
-                  backgroundImage: `url(${fruit.image})`,
-                }}
-              ></div>
-            </div>
+            <div
+              key={fruit.id}
+              className="image-container-smoothie-cup  with-background-image-smoothie-cup"
+              title={fruit.title}
+              style={{
+                backgroundImage: `url(${fruit.image})`,
+              }}
+            ></div>
           ))}
         </div>
       </div>

@@ -16,6 +16,9 @@
 }
 .make-it-smoothie-cup {
   display: grid;
+  position: absolute;
+  right: 40%;
+  top: 30%;
 }
 .make-new-one {
   display: grid;

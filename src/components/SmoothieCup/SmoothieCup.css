@@ -2,51 +2,49 @@
   display: grid;
   position: absolute;
   top: 20%;
-  right: 20%;
+  right: 30%;
   padding: 20px;
 }
 
 .smoothie-cup-name {
   display: grid;
-  font-style: normal;
-  font-weight: normal;
   font-size: 36.12px;
-  line-height: 41px;
-  align-items: center;
   text-align: center;
   /* color: var(--primary); */
   background: var(--primary);
   opacity: 0.3;
   border-radius: 90px 90px 30px 30px;
   padding: 10px;
-  width: 300px;
+  width: 240px;
   height: 60px;
 }
 .smoothie-cup {
   display: grid;
   background: var(--primary);
   opacity: 0.3;
+  width: 200px;
   height: 300px;
-  width: 250px;
   place-content: center;
   border-radius: 18px;
   justify-self: center;
 }
 
-.smoothie-cup-images {
+.smoothie-cup-images-container {
   display: grid;
   background: var(--background);
-  width: 180px;
+  width: 160px;
   height: 250px;
+  overflow-y: auto;
+  justify-content: center;
 }
-
 .image-container-smoothie-cup {
   display: grid;
   align-items: center;
-  width: 170px;
+  width: 120px;
   height: 50px;
 }
 .with-background-image-smoothie-cup {
   background-position: center;
   background-size: cover;
+  border: var(--primary) solid 1px;
 }

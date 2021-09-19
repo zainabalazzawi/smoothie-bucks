@@ -14,13 +14,14 @@ function App() {
   const {
     getIt,
     setGetIt,
-    addFruit,
     selectedList,
     removeFromList,
     setYourName,
     yourName,
     makeIt,
     setMakeIt,
+    addRemoveFruit,
+    isSelected,
   } = useGet();
 
   return (
@@ -33,8 +34,8 @@ function App() {
           </p>
           <FruitsList
             data={data}
-            addFruit={addFruit}
-            selectedList={selectedList}
+            addRemoveFruit={addRemoveFruit}
+            isSelected={isSelected}
           />
           <GetItButton
             getIt={getIt}

@@ -4,14 +4,17 @@
   box-shadow: 0px 0px 24px -20px rgba(0, 0, 0, 0.35);
   border-radius: 18px;
   margin-top: 30px;
-  opacity: 0.5;
+  /* opacity: 0.5; */
   padding: 10px;
+  height: 400px;
+  overflow-y: auto;
 }
 
 .fruit-item {
   display: grid;
   grid-template-columns: 100px 1fr;
   padding: 10px;
+  height: 80px;
 }
 .image-container-fruit {
   display: grid;
@@ -29,6 +32,7 @@
 
 .fruit-name-selected-list {
   display: grid;
+  grid-template-columns: 3fr 0.5fr;
   box-shadow: 0px 0px 24px -20px rgba(0, 0, 0, 0.35);
   border-radius: 18px;
   font-style: normal;
