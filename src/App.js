@@ -25,10 +25,10 @@ function App() {
   } = useGet();
 
   return (
-    <div className="main-container">
+    <div className="main-container background-main">
       {!getIt ? (
         <div className="app-container">
-          <h1 className="logo">SmoothieBucks</h1>
+          <div className="logo"></div>
           <p className="text">
             To make the best Smoothie, select your favorate fruites:
           </p>

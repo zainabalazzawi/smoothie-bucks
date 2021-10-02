@@ -11,15 +11,21 @@
   display: grid;
   background: var(--background);
   height: 100vh;
-  /* padding: 20px; */
+}
+.background-main {
+  background-image: url(../image/background-main.png);
+  background-size: contain;  
 }
 .app-container {
-  background-image: url(../image/Group\ 4.svg);
-  background-size: contain;
+  display: grid;
+  align-content: center;
 }
 .logo {
-  display: grid;
-  justify-content: center;
+  background-image: url(../image/logo.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 75px;  
 }
 .text {
   display: grid;
@@ -29,5 +35,4 @@
   line-height: 41px;
   justify-content: center;
   color: var(--primary);
-  margin-bottom: 0px;
 }
