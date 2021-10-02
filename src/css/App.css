@@ -11,7 +11,11 @@
   display: grid;
   background: var(--background);
   height: 100vh;
-  padding: 10px;
+  /* padding: 20px; */
+}
+.app-container {
+  background-image: url(../image/Group\ 4.svg);
+  background-size: contain;
 }
 .logo {
   display: grid;

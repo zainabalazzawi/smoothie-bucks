@@ -32,14 +32,12 @@
 .smoothie-cup-images-container {
   display: grid;
   background: var(--background);
-  width: 160px;
-  height: 250px;
   overflow-y: auto;
+  padding: 0 20px;
   justify-content: center;
 }
 .image-container-smoothie-cup {
   display: grid;
-  align-items: center;
   width: 120px;
   height: 50px;
 }

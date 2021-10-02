@@ -1,11 +1,18 @@
 .make-it-container {
   display: grid;
+  background-image: url(/src/image/Desktop\ -\ 3.svg);
+  background-size: contain;
+  /* background-repeat: no-repeat; */
+  height: 100vh;
 }
 .make-it-logo {
   display: grid;
   justify-content: center;
 }
 .text-3 {
+  position: absolute;
+  top: 15%;
+  right: 40%;
   display: grid;
   font-style: normal;
   font-weight: normal;
@@ -13,6 +20,7 @@
   line-height: 41px;
   text-align: center;
   color: var(--primary);
+  justify-self: auto;
 }
 .make-it-smoothie-cup {
   display: grid;

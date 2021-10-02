@@ -6,7 +6,6 @@
   margin-top: 30px;
   /* opacity: 0.5; */
   padding: 10px;
-  height: 400px;
   overflow-y: auto;
 }
 
@@ -14,7 +13,6 @@
   display: grid;
   grid-template-columns: 100px 1fr;
   padding: 10px;
-  height: 80px;
 }
 .image-container-fruit {
   display: grid;

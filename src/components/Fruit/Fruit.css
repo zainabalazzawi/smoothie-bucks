@@ -47,7 +47,6 @@
   padding: 10px;
 }
 .fruit-name {
-  display: grid;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -57,7 +56,6 @@
   color: var(--white);
 }
 .color {
-  display: grid;
   width: 17px;
   height: 17px;
   border: 1px solid var(--white);

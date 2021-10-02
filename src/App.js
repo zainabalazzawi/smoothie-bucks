@@ -27,7 +27,7 @@ function App() {
   return (
     <div className="main-container">
       {!getIt ? (
-        <div>
+        <div className="app-container">
           <h1 className="logo">SmoothieBucks</h1>
           <p className="text">
             To make the best Smoothie, select your favorate fruites:

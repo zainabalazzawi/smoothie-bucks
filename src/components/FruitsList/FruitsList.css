@@ -1,6 +1,5 @@
 .fruits-list {
   grid-template-columns: repeat(5, auto);
-  padding-left: 120px;
-  padding-right: 120px;
+  padding: 0 120px;
   display: grid;
 }
