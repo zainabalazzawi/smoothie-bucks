@@ -1,24 +1,19 @@
 .fruit {
   display: grid;
-  padding: 20px;
   position: relative;
+  width: 190px;
+  height: 190px;
 }
 .fruit:hover .remove-icon {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   box-shadow: 0px 10px 10px -4px rgba(0, 0, 0, 0.35);
-  border-radius: 11px;
+  border-radius: 13px;
   width: 180px;
   height: 180px;
   place-content: center;
-  padding: none;
+  transition: all 250ms ease-in-out;
 }
 
-.remove-icon {
-  display: none;
-  color: #f8485e;
-  place-self: center;
-  font-size: 80px;
-}
 .image-container {
   display: grid;
   box-shadow: 0px 10px 10px -4px rgba(0, 0, 0, 0.35);
@@ -35,16 +30,33 @@
 .rectangle-fruit {
   display: grid;
   position: absolute;
+  width: 80%;
+  height: 40px;
+  bottom: -10%;
+  right: 10%;
   grid-template-columns: 1fr 5fr;
   background: var(--primary);
   opacity: 0.75;
   box-shadow: 0px 10px 10px -4px rgba(0, 0, 0, 0.35);
   border-radius: 18px;
-  width: 155px;
-  height: 40px;
-  top: 80%;
-  right: 16%;
   padding: 10px;
+  transition: all 250ms ease-in-out;
+}
+.fruit:hover .rectangle-fruit {
+  opacity: 1;
+}
+
+.fruit-selected .remove-icon {
+  opacity: 0;
+}
+
+.fruit-selected .rectangle-fruit {
+  opacity: 1;
+}
+
+.fruit-selected:hover .remove-icon {
+  opacity: 1;
+  transition: all 250ms ease-in-out;
 }
 .fruit-name {
   font-style: normal;

@@ -1,5 +1,7 @@
 .fruits-list {
-  grid-template-columns: repeat(5, auto);
-  padding: 0 120px;
   display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 40px;
+  justify-content: center;
+  margin-bottom: 100px;
 }

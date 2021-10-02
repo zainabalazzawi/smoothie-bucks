@@ -20,7 +20,6 @@
   line-height: 41px;
   text-align: center;
   color: var(--primary);
-  justify-self: auto;
 }
 .make-it-smoothie-cup {
   display: grid;
