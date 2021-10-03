@@ -1,7 +1,7 @@
 .fruits-list {
-  display: grid;
   grid-template-columns: repeat(5, auto);
   gap: 40px;
+  display: grid;
   justify-content: center;
   margin-bottom: 100px;
 }

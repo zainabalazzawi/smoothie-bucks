@@ -7,7 +7,7 @@
 .fruit:hover .remove-icon {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   box-shadow: 0px 10px 10px -4px rgba(0, 0, 0, 0.35);
-  border-radius: 13px;
+  border-radius: 11px;
   width: 180px;
   height: 180px;
   place-content: center;
@@ -18,15 +18,11 @@
   display: grid;
   box-shadow: 0px 10px 10px -4px rgba(0, 0, 0, 0.35);
   border-radius: 18px;
-  width: 190px;
 }
-
 .with-background-image {
   background-position: center;
   background-size: cover;
-  height: 190px;
 }
-
 .rectangle-fruit {
   display: grid;
   position: absolute;
@@ -42,6 +38,7 @@
   padding: 10px;
   transition: all 250ms ease-in-out;
 }
+
 .fruit:hover .rectangle-fruit {
   opacity: 1;
 }
@@ -58,6 +55,7 @@
   opacity: 1;
   transition: all 250ms ease-in-out;
 }
+
 .fruit-name {
   font-style: normal;
   font-weight: 600;
