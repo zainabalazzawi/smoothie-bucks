@@ -5,10 +5,9 @@ import "./MakeIt.css";
 const MakeIt = ({ selectedList, yourName, setGetIt }) => {
   return (
     <div className="make-it-container">
-      <h1 className="make-it-logo"> SmoothieBucks</h1>
-      <p className="text-3">Enjoy your Smoothie!</p>
-      <div className="make-it-smoothie-cup">
-        {" "}
+      <div className="make-it-logo"> </div>
+      <div className="text-3">Enjoy your Smoothie!</div>
+      <div className="make-it-cup">
         <SmoothieCup selectedList={selectedList} yourName={yourName} />
       </div>
       <div className="make-new-one" onClick={() => setGetIt(false)}>

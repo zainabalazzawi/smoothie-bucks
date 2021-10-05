@@ -1,0 +1,21 @@
+.main-page {
+  display: grid;
+  align-content: center;
+}
+
+.logo {
+  background-image: url(/src/images/logo.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 75px;
+}
+.text {
+  display: grid;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36.12px;
+  line-height: 41px;
+  justify-content: center;
+  color: var(--primary);
+}

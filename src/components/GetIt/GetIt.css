@@ -1,17 +1,21 @@
 .get-it-container {
   background: var(--background);
-  /* background-image: url(/src/image/Desktop\ -\ 2.svg);
-  background-size: contain;
-  background-repeat: no-repeat; */
   height: 100vh;
 }
 
 .side-bar {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
   width: 400px;
   padding: 20px;
 }
 .get-it-logo {
   justify-content: center;
+  align-self: flex-end;
+  background-image: url(/src/images/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 75px;
 }
 
 .arrow-left {

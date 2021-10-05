@@ -16,11 +16,11 @@ const GetIt = ({
   setGetIt,
 }) => {
   return (
-    <div className="get-it-container">
+    <div>
       {!makeIt ? (
-        <div className="background-2">
+        <div className="get-it-container">
           <div className="side-bar">
-            <h1 className="get-it-logo">SmoothieBucks</h1>
+            <div className="get-it-logo"></div>
             <YourName yourName={yourName} setYourName={setYourName} />
             <SelectedFruitsList
               selectedList={selectedList}
@@ -35,7 +35,6 @@ const GetIt = ({
           <div className="make-it-happen-container">
             <p className="make-it-happen"> Make it happen!</p>
             <div className="arrow-right" onClick={() => setMakeIt(true)}>
-              {" "}
               <FaArrowRight />
             </div>
           </div>

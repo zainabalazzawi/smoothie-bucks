@@ -1,9 +1,7 @@
 import useFetch from "./components/Hooks/useFetch";
 import useGet from "./components/Hooks/useGet";
-import FruitsList from "./components/FruitsList/FruitsList";
-import GetItButton from "./components/GetItButton/GetItButton";
 import GetIt from "./components/GetIt/GetIt";
-
+import MainPage from "./components/MainPage/MainPage";
 import "./css/App.css";
 
 function App() {
@@ -27,22 +25,14 @@ function App() {
   return (
     <div className="main-container background-main">
       {!getIt ? (
-        <div className="app-container">
-          <div className="logo"></div>
-          <p className="text">
-            To make the best Smoothie, select your favorate fruites:
-          </p>
-          <FruitsList
-            data={data}
-            addRemoveFruit={addRemoveFruit}
-            isSelected={isSelected}
-          />
-          <GetItButton
-            getIt={getIt}
-            setGetIt={setGetIt}
-            selectedList={selectedList}
-          />
-        </div>
+        <MainPage
+          data={data}
+          addRemoveFruit={addRemoveFruit}
+          isSelected={isSelected}
+          getIt={getIt}
+          setGetIt={setGetIt}
+          selectedList={selectedList}
+        />
       ) : (
         <GetIt
           selectedList={selectedList}

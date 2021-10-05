@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent as TrashIcon } from "../../image/trash-icon.svg";
+import { ReactComponent as TrashIcon } from "../../images/trash-icon.svg";
 
 import "./Fruit.css";
 const Fruit = ({ fruit, selected, addRemoveFruit }) => {
