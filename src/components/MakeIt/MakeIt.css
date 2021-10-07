@@ -1,6 +1,6 @@
 .make-it-container {
   display: grid;
-  grid-template-rows: 4fr 10fr 1fr;
+  grid-template-rows: 200px 6fr 1fr;
   background-image: url(/src/images/background-3.svg);
   background-size: contain;
   background-repeat: repeat;
@@ -26,6 +26,8 @@
   color: var(--primary);
 }
 .make-it-cup {
+  justify-content: center;
+  align-content: center;
 }
 .make-new-one {
   background: var(--primary);
@@ -37,4 +39,5 @@
   font-size: 36.12px;
   line-height: 41px;
   color: var(--accent);
+  justify-content: end;
 }
