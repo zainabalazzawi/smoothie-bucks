@@ -1,6 +1,5 @@
 import React from "react";
 import "./SelectedFruitsList.css";
-import { HiOutlineTrash } from "react-icons/hi";
 
 const SelectedFruitsList = ({ selectedList, removeFromList }) => {
   console.log(selectedList);
