@@ -37,6 +37,10 @@ const useGet = () => {
         .length > 0
     );
   };
+
+  const restSelectedList = () => {
+    setSelectedList([]);
+  };
   return {
     getIt,
     setGetIt,
@@ -48,6 +52,7 @@ const useGet = () => {
     setMakeIt,
     makeIt,
     isSelected,
+    restSelectedList,
   };
 };
 

@@ -1,5 +1,4 @@
 import React from "react";
-import { FaArrowRight } from "react-icons/fa";
 import "./GetItButton.css";
 const GetItButton = ({ setGetIt, selectedList }) => {
   const isEmpty = selectedList.length === 0;
@@ -17,10 +16,7 @@ const GetItButton = ({ setGetIt, selectedList }) => {
       ) : (
         <h1 className="get-blend">let’s get blendy!</h1>
       )}
-      <div className="arrow">
-        {" "}
-        <FaArrowRight />
-      </div>
+      <div className="arrow"></div>
     </div>
   );
 };

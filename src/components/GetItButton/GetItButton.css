@@ -56,9 +56,8 @@
 }
 
 .arrow {
-  display: grid;
-  font-size: 40px;
-  color: var(--accent);
-  justify-items: center;
-  align-items: center;
+  background-image: url(/src/images/next-arrow.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
 }

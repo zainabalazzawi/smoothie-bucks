@@ -22,7 +22,7 @@ const SelectedFruitsList = ({ selectedList, removeFromList }) => {
             onClick={() => removeFromList(fruit)}
           >
             {fruit.name}
-            <HiOutlineTrash onClick={() => removeFromList(fruit)} />
+            <div className="small-trash"></div>
           </div>
         </div>
       ))}

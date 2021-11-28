@@ -20,6 +20,7 @@ function App() {
     setMakeIt,
     addRemoveFruit,
     isSelected,
+    restSelectedList,
   } = useGet();
 
   return (
@@ -42,6 +43,7 @@ function App() {
           makeIt={makeIt}
           setMakeIt={setMakeIt}
           setGetIt={setGetIt}
+          restSelectedList={restSelectedList}
         />
       )}
     </div>

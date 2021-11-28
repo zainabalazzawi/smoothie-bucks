@@ -7,12 +7,17 @@
   border-radius: 18px;
   height: 65px;
   border: none;
-  padding: 10px;
+  padding-left: 30px;
+  margin-bottom: 40px;
+}
+input::placeholder {
+  color: var(--primary);
+  opacity: 0.3;
   font-style: normal;
   font-weight: normal;
-  font-size: 23px;
+  font-size: 20px;
   line-height: 30px;
-  color: var(--primary);
+  margin-left: 30px;
 }
 .text-2 {
   font-style: normal;
@@ -20,5 +25,5 @@
   font-size: 36.12px;
   line-height: 41px;
   color: var(--primary);
-  margin-bottom: 1px;
+  margin-bottom: 10px;
 }

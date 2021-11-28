@@ -4,7 +4,6 @@ import SmoothieCup from "../SmoothieCup/SmoothieCup";
 import YourName from "../YourName/YourName";
 import SelectedFruitsList from "../SelectedFruitsList/SelectedFruitsList";
 import MakeIt from "../MakeIt/MakeIt";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const GetIt = ({
   selectedList,
@@ -14,6 +13,7 @@ const GetIt = ({
   makeIt,
   setMakeIt,
   setGetIt,
+  restSelectedList,
 }) => {
   return (
     <div>
@@ -29,14 +29,14 @@ const GetIt = ({
           </div>
           <SmoothieCup yourName={yourName} selectedList={selectedList} />
 
-          <div className="arrow-left" onClick={() => setGetIt(false)}>
-            <FaArrowLeft />
-          </div>
-          <div className="make-it-happen-container">
+          <div className="back-arrow" onClick={() => setGetIt(false)}></div>
+
+          <div
+            className="make-it-happen-container"
+            onClick={() => setMakeIt(true)}
+          >
             <p className="make-it-happen"> Make it happen!</p>
-            <div className="arrow-right" onClick={() => setMakeIt(true)}>
-              <FaArrowRight />
-            </div>
+            <div className="next-arrow"></div>
           </div>
         </div>
       ) : (
@@ -44,6 +44,7 @@ const GetIt = ({
           selectedList={selectedList}
           yourName={yourName}
           setGetIt={setGetIt}
+          restSelectedList={restSelectedList}
         />
       )}
     </div>

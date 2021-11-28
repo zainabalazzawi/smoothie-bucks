@@ -1,64 +1,65 @@
 .get-it-container {
   background: var(--background);
   height: 100vh;
+  overflow: hidden;
 }
 
 .side-bar {
   display: grid;
   grid-template-rows: 100px 1fr;
-  width: 400px;
+  width: 450px;
   padding: 20px;
+  margin-left: 10px;
 }
+
 .get-it-logo {
-  justify-content: center;
-  align-self: flex-end;
   background-image: url(/src/images/logo.svg);
   background-repeat: no-repeat;
   background-size: contain;
+  justify-content: center;
+  align-self: end;
   height: 75px;
 }
 
-.arrow-left {
+.back-arrow {
   display: grid;
   position: absolute;
-  background: var(--supporting);
+  right: 49%;
+  bottom: 2%;
+  padding: 40px;
   box-shadow: 0px -26px 25px -10px rgba(0, 0, 0, 0.35);
   border-radius: 17px 17px 0px 0px;
-  height: 80px;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 41px;
-  padding: 30px;
-  right: 49%;
-  bottom: 2.2%;
-  color: var(--primary);
+  background: var(--supporting);
+  background-image: url(/src/images/back-arrow.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
 }
 .make-it-happen-container {
   display: grid;
-  grid-template-columns: 2fr 0.5fr;
+  grid-template-columns: 2fr 1fr;
   position: absolute;
-  height: 90px;
-  right: 22%;
-  bottom: 1%;
+  right: 18%;
+  bottom: 2%;
   background: var(--primary);
   box-shadow: 0px -26px 25px -10px rgba(0, 0, 0, 0.35);
   border-radius: 17px 17px 17px 0px;
+  color: var(--accent);
+  padding: 20px;
+  padding-right: 0px;
+}
+.make-it-happen {
   font-style: normal;
   font-weight: normal;
   font-size: 36.12px;
   line-height: 41px;
-  color: var(--accent);
-  padding: 0px 30px;
+  padding-left: 60px;
+  margin: 0;
 }
-.make-it-happen {
-  display: grid;
-  place-self: center;
-}
-.arrow-right {
-  display: grid;
-  place-content: center;
-  justify-content: right;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 41px;
+.next-arrow {
+  background-image: url(/src/images/next-arrow.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  margin-left: 60px;
 }
